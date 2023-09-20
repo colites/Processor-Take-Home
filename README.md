@@ -18,16 +18,16 @@ A tool to make HTTP requests (e.g., curl, Postman)
 
 Clone the repository:
 ```bash
-git clone https://github.com/colites/receipt-processor.git
+git clone https://github.com/colites/Processor-Take-Home.git
 ```
 Navigate to the project directory:
 ```bash
-cd receipt-processor
+cd Processor-Take-Home
 ```
 Build and run the application:
 ```bash
 go build
-./receipt-processor
+./Processor-Take-Home
 
 ```
 
