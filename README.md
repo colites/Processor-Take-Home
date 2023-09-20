@@ -54,35 +54,31 @@ The server will start running on http://localhost:8080.
 
 ### Processing a receipt
 To process a new receipt, make a POST request to /receipts/process.
+on UNIX-like system:
 ```bash
-curl --request POST \
-  --url http://localhost:8080/receipts/process \
-  --header 'Content-Type: application/json' \
-  --data '{
-    "retailer": "SomeNewWalmart",
-    "purchaseDate": "2023-09-20",
-    "purchaseTime": "14:00",
-    "total": "10.25",
-    "items": [
-      {
-        "shortDescription": "Milk",
-        "price": "2.50"
-      },
-      {
-        "shortDescription": "Candy",
-        "price": "1.75"
-      }
-    ]
-  }'
+curl -X POST -H "Content-Type: application/json" -d '{"retailer":"Some Retailer","purchaseDate":"2023-09-18","purchaseTime":"15:04","items":[{"shortDescription":"item1","price":"10.00"},{"shortDescription":"item2","price":"20.00"}],"total":"30.00"}' http://localhost:8080/receipts/process
 ```
+
+for windows:
+```bash
+curl -X POST -H "Content-Type: application/json" -d "{\"retailer\":\"Some Retailer\",\"purchaseDate\":\"2023-09-18\",\"purchaseTime\":\"15:04\",\"items\":[{\"shortDescription\":\"item1\",\"price\":\"10.00\"},{\"shortDescription\":\"item2\",\"price\":\"20.00\"}],\"total\":\"30.00\"}" http://localhost:8080/receipts/process
+```
+
 The API will return an ID for the stored receipt.
 
 ### Get Points for a receipt
 
 To get the points for a processed receipt, make a GET request to /receipts/{id}.
+
+For Unix systems:
 ```bash
 curl --request GET \
   --url http://localhost:8080/receipts/{id}
+```
+
+for windows:
+```bash
+curl http://localhost:8080/receipts/{id}
 ```
 
 The API will return the number of points for the given ID.
