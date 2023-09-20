@@ -20,15 +20,27 @@ Clone the repository:
 ```bash
 git clone https://github.com/colites/Processor-Take-Home.git
 ```
+
+If not already initialized, run the following command to initialize the Go module
+```bash
+go mod init Processor-Take-Home
+```
+
 Navigate to the project directory:
 ```bash
-cd Processor-Take-Home
+cd Processor-Take-Home/receipt-processor/cmd/server
 ```
-Build and run the application:
+Build the application:
 ```bash
 go build
-./Processor-Take-Home
-
+```
+Start the server
+```bash
+./server
+```
+or on windows
+```bash
+server.exe
 ```
 
 The server will start running on http://localhost:8080.
