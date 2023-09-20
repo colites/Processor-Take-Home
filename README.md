@@ -18,7 +18,7 @@ A tool to make HTTP requests (e.g., curl, Postman)
 
 Clone the repository:
 ```bash
-git clone https://github.com/your_username/receipt-processor.git
+git clone https://github.com/colites/Processor-Take-Home.git
 ```
 Navigate to the project directory:
 ```bash
