@@ -73,12 +73,12 @@ To get the points for a processed receipt, make a GET request to /receipts/{id}.
 For Unix systems:
 ```bash
 curl --request GET \
-  --url http://localhost:8080/receipts/{id}
+  --url http://localhost:8080/receipts/{id}/points
 ```
 
 for windows:
 ```bash
-curl http://localhost:8080/receipts/{id}
+curl http://localhost:8080/receipts/{id}/points
 ```
 
 The API will return the number of points for the given ID.
