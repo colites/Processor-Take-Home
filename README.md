@@ -21,14 +21,19 @@ Clone the repository:
 git clone https://github.com/colites/Processor-Take-Home.git
 ```
 
+Navigate to the root directory:
+```bash
+cd Processor-Take-Home/receipt-processor
+```
+
 If not already initialized, run the following command to initialize the Go module
 ```bash
-go mod init Processor-Take-Home
+go mod init receipt-processor
 ```
 
 Navigate to the project directory:
 ```bash
-cd Processor-Take-Home/receipt-processor/cmd/server
+cd cmd/server
 ```
 Build the application:
 ```bash
