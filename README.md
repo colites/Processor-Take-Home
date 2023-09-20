@@ -1,4 +1,4 @@
-# Processor-Take-Home
+# receipt-processor
 
 The Receipt Points Processor is a Go-based web application that provides APIs for storing receipts and calculating points based on given rules. This application uses in-memory storage to manage receipt information.
 
